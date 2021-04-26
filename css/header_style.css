@@ -1,0 +1,30 @@
+.header {
+	width: 100%;
+	display: block;
+	background-color: #669b41;
+	color: #fff;
+}
+
+.inner_header {
+    min-width: calc(750px + 8*10px);
+    max-width: 970px;
+	height: 70px;
+	display: block;
+	margin: 0 auto;
+}
+
+.container_logo {
+    background-color: rgb(102, 155, 65);
+    height: 100%; 
+}
+
+.container_logo img {
+   height: 100%;
+}
+
+@media(max-width: calc(750px + 8*10px)) {
+
+	.inner_header {
+        min-width: 340px;
+    }
+}

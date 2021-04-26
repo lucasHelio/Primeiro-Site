@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+.container_form {
+    min-width: fit-content;
+	max-width: 1260px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.Formulario {
+    color: rgb(0, 0, 0);
+	font: 900 30px Roboto,helvetica,arial,sans-serif;
+	width: 44.5%;
+	min-width: calc(450px - 2*20px);
+	margin: auto;
+}
+
+.Formulario h1 {
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.select_container {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	display: block;
+}
+
+.Gravidade {
+	display: block;
+	font-size: 15px;
+	margin-top: 1.2rem;
+}
+
+.Opcoes_Container {
+	display: table;
+	vertical-align: center;
+	margin: 0.8rem auto 0;
+}
+
+.Gravidade_Opcao {
+	display: table-cell;
+	padding: 0 0.8rem;
+}
+
+.Descricao {
+	margin-top: 1rem;
+}
+
+.Input_Descricao {
+	width: 100%;
+	min-height: 150px;
+	padding: 5px 15px 5px 15px;
+	resize: none;
+	display: block;
+	box-sizing: border-box;
+	overflow-wrap: break-word;
+	border: solid 2px #669b41;
+}
+
+.butao_formulario{
+	margin: 1rem auto;
+	padding: 12px;
+	display: block;
+	border-radius: 7%;
+}
+
+.uf_input {
+	width: 100%;
+	margin: auto;
+    padding: 0.4rem 0;
+	display: block;
+	border: solid 2px #669b41;
+}
+
+.span_conteudo {
+	font-size: 15px;
+	display: block;
+	margin-top: 1.2rem;
+}

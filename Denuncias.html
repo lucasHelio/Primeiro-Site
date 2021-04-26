@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Denúncias - Denúncia</title>
+		<link rel="stylesheet" href="css/form_style.css">
+		<link rel="stylesheet" href="css/header_style.css">
+		<script language="JavaScript" type="text/javascript" src="js/cidades-estados.js"></script>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="inner_header">
+				<div class="container_logo">
+					<a href="Index.html">
+						<img src="img/img5.png" alt="Logo">
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container_form">
+			<form class="Formulario">
+				<h1>Formulário de Denúncia</h1>
+				
+				<span for="cnpj" class="span_conteudo">Estado:</span>
+				<div class="select_container">
+					<select id="estado" class="uf_input" onchange="atribuiCidades(event)" name="estado">
+						<option value="" selected></option>
+					</select>
+				</div>
+
+				<span for="cnpj" class="span_conteudo">Cidade:</span>
+				<div class="select_container">
+					<select id="cidade" class="uf_input" name="cidade">
+						<option value="" selected></option>
+					</select>
+				</div>		
+
+				<div class="Gravidade">
+					<p>Gravidade:</p>
+					<div class="Opcoes_Container">
+						<div class="Gravidade_Opcao">
+							<input Id="Grave" type="radio" name="Gravidade" value="Grave">
+							<label for="Grave">Grave</label>
+						</div>
+						<div class="Gravidade_Opcao">
+							<input Id="Medio" type="radio" name="Gravidade" value="Medio">
+							<label for="Medio">Medio</label>
+						</div>
+						<div class="Gravidade_Opcao">
+							<input Id="Leve" type="radio" name="Gravidade" value="Leve">
+							<label for="Leve">Leve</label>
+						</div>
+					</div>
+				</div>
+				
+				<div class="Descricao">
+					<textarea class="Input_Descricao" placeholder="Descrição"></textarea>
+				</div>
+				<button class="butao_formulario" id="Enviar_form">Enviar</button>
+			</form>
+		</div>
+
+		<!-- script botao -->
+		<script>
+				var botao = document.getElementById("Enviar_form");
+	
+				botao.onclick = function(){
+					window.alert("Sua denuncia foi enviada");
+				}
+				
+			
+		</script>
+
+		<!-- script options -->
+		<script language="JavaScript" type="text/javascript" charset="utf-8">
+			new dgCidadesEstados({
+				cidade: document.getElementById('cidade'),
+				estado: document.getElementById('estado')
+			})
+		</script>
+	
+	</body>
+</html>

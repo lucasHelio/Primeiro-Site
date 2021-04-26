@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Meio Ambiente - Mapa</title>
+        <link rel="stylesheet" href="css/index_style.css">
+        <link rel="stylesheet" href="css/header_style.css">
+        
+        <style>
+            /* Set the size of the div element that contains the map */
+           #map {
+             
+            height: 700px;  /* The height is 400 pixels */
+             width: 100%;  /* The width is the width of the web page */
+            }
+         </style>
+    </head>
+
+    <body>
+    <body>
+        <div class="header">
+            <div class="inner_header">
+                <div class="container_logo">
+                    <a href="Index.html" title="Página inicial"> <img src="img/img5.png" alt="Logo"></a>
+                </div>
+            </div>
+        </div>
+        <div class="container_mapa">
+            <div id="map"></div>
+        </div>
+        <div class="bot">
+            <div class="redes">
+                <img src="img/facebook.png" class="img_bot">
+                <img src="img/twitter.png" class="img_bot">
+                <img src="img/instagram.png" class="img_bot">
+                
+            </div>
+        </div>
+        
+        <script>
+            // Initialize and add the map
+            function initMap() {
+              // The location of Uluru
+              var Rio = {lat: -4.593532, lng: -64.356825};
+              // The map, centered at Uluru
+              var map = new google.maps.Map(
+                  document.getElementById('map'), {zoom: 5, center: Rio});
+              // The marker, positioned at Uluru
+              var marker = new google.maps.Marker({position: Rio, map: map});
+            }
+        </script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9LdiU2Ic9lEx1MH4xBAUvwkvnK8ntRsU&callback=initMap">
+        </script>
+    </body>
+</html>
